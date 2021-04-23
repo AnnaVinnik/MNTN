@@ -45,6 +45,10 @@
       justify-content: space-around;
 }
 
+.nav__item {
+  color: red;
+}
+
 .account {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,6 +67,10 @@
 .account__item {
   line-height: 21px;
   font-size: 17px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .body {
