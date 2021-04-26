@@ -1,12 +1,36 @@
-@import header
-a 
+a
     text-decoration: none
-    
+
 .body
-    background-color: orange
+    background-color: #0B1D26
 
 .container
     max-width: 1760px
     padding: 0 15px
     margin: 0 auto
     box-sizing: border-box
+
+@import header
+
+.picture
+    &__item
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        z-index: 0
+        &_sky
+            top: 0px
+        &_mountains
+            top: 320px
+        &_human
+            top: 520px
+    &::after
+        content: ""
+        display: block
+        position: absolute
+        left: 0
+        top: 600px
+        width: 100%
+        height: 700px
+        background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%)

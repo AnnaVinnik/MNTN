@@ -1,3 +1,19 @@
+a {
+  text-decoration: none;
+}
+
+.body {
+  background-color: #0B1D26;
+}
+
+.container {
+  max-width: 1760px;
+  padding: 0 15px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .header {
   color: red;
   display: -webkit-box;
@@ -15,6 +31,7 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  z-index: 10;
 }
 
 .header__logo {
@@ -24,12 +41,10 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-}
-
-.logo {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  z-index: 10;
 }
 
 .logo__img {
@@ -41,12 +56,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .nav__item {
-  color: red;
+  color: white;
 }
 
 .account {
@@ -59,9 +78,10 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  z-index: 10;
 }
 
 .account__item {
@@ -69,19 +89,35 @@
   font-size: 17px;
 }
 
-a {
-  text-decoration: none;
+.picture__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
 }
 
-.body {
-  background-color: orange;
+.picture__item_sky {
+  top: 0px;
 }
 
-.container {
-  max-width: 1760px;
-  padding: 0 15px;
-  margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.picture__item_mountains {
+  top: 320px;
+}
+
+.picture__item_human {
+  top: 520px;
+}
+
+.picture::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 600px;
+  width: 100%;
+  height: 700px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 29, 38, 0)), color-stop(61.38%, #0B1D26));
+  background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
 }
 /*# sourceMappingURL=style.css.map */

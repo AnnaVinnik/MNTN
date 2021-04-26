@@ -5,28 +5,32 @@
     align-items: center
     &__nav 
         flex-grow: 1
+        z-index: 10
     &__logo
         display: flex
         justify-content: flex-start
+        flex-grow: 3
+        z-index: 10
         
 
 .logo 
-    flex-grow: 1
     &__img
         width: 108px
         height: 24px
 
 .nav
     display: flex
-    justify-content: space-around
+    justify-content: space-evenly
+    flex-grow: 1
     &__item
-        color: red
+        color: white
 
 .account
     display: flex
     align-items: center
     justify-content: flex-end
-    flex-grow: 1
+    flex-grow: 3
+    z-index: 10
     &__item
         line-height: 21px
         font-size: 17px
