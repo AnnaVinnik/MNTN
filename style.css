@@ -275,6 +275,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 200px;
+  gap: 114px;
 }
 
 .article__img {
@@ -295,7 +297,7 @@ a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-right: 100px;
+  margin-left: 120px;
 }
 
 .article__number {
@@ -308,5 +310,26 @@ a {
   position: absolute;
   top: -107px;
   left: -148px;
+}
+
+.article__read-more {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FBD784;
+  margin-top: 27px;
+  position: relative;
+}
+
+.article__read-more::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 18px;
+  background-image: url(img/right.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 104px;
+  bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
