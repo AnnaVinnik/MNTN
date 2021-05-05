@@ -173,13 +173,15 @@ a {
   font-family: Gilroy, sans-serif;
   font-weight: 800;
   z-index: 100;
-  position: relative;
+  position: absolute;
+  top: -32px;
+  left: 0;
   color: #FBD784;
   text-transform: uppercase;
   letter-spacing: 6px;
-  margin-left: 80px;
-  position: absolute;
+  margin-left: 104px;
   font-size: 18px;
+  line-height: 22px;
 }
 
 .over-heading:before {
@@ -189,8 +191,65 @@ a {
   height: 2px;
   position: absolute;
   border-top: 2px solid #FBD784;
-  left: -80px;
+  left: -104px;
   top: 11px;
+}
+
+.scroll-down {
+  position: absolute;
+  z-index: 100;
+  color: white;
+  left: 0;
+  font-family: Gilroy, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: lowercase;
+  margin-top: 32px;
+}
+
+.scroll-down::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -32px;
+  top: 0;
+  width: 16px;
+  height: 24px;
+  background-image: url(img/down.svg);
+}
+
+.instagram,
+.twitter {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  color: white;
+  font-size: 18px;
+}
+
+.social {
+  color: white;
+  font-size: 18px;
+  font-family: Gilroy, sans-serif;
+  font-weight: 700;
+  line-height: 22px;
+  position: absolute;
+  left: -20px;
+  top: 40vh;
+  z-index: 100;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.social__inst {
+  left: 88px;
+  bottom: 0;
+}
+
+.social__twitter {
+  left: 115px;
+  bottom: 0;
 }
 
 .main__heading {
