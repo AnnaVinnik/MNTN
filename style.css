@@ -40,7 +40,7 @@ a {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 950px;
   padding: 0 15px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
@@ -62,6 +62,7 @@ a {
   font-family: Gilroy;
   font-weight: bold;
   font-size: 18;
+  max-width: 1200px;
 }
 
 .header__nav {
@@ -129,7 +130,7 @@ a {
 }
 
 .picture {
-  height: 700px;
+  height: 335px;
 }
 
 .picture-main {
@@ -167,6 +168,16 @@ a {
   font-size: 64px;
   font-weight: 600;
   line-height: 77px;
+}
+
+.paragraph {
+  font-family: Gilroy;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  color: white;
+  position: relative;
+  z-index: 100;
 }
 
 .over-heading {
@@ -258,5 +269,44 @@ a {
   margin: 0 auto;
   margin-top: 25vh;
   max-width: 950px;
+}
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.article__img {
+  z-index: 100;
+  max-width: 400px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.article__paragraph {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 100px;
+}
+
+.article__number {
+  font-family: Gilroy, sans-serif;
+  font-weight: bold;
+  font-size: 240px;
+  line-height: 240px;
+  color: #FFFFFF;
+  opacity: 0.1;
+  position: absolute;
+  top: -107px;
+  left: -148px;
 }
 /*# sourceMappingURL=style.css.map */

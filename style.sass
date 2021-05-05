@@ -7,7 +7,7 @@ a
     background-color: #0B1D26
 
 .container
-    max-width: 1200px
+    max-width: 950px
     padding: 0 15px
     margin: 0 auto
     box-sizing: border-box
@@ -15,7 +15,7 @@ a
 @import header
 
 .picture
-    height: 700px
+    height: 335px
     &-main
         filter: brightness(90%)
         position: absolute
@@ -45,6 +45,15 @@ a
     font-size: 64px
     font-weight: 600
     line-height: 77px
+
+.paragraph
+    font-family: Gilroy
+    font-weight: bold
+    font-size: 18px
+    line-height: 32px
+    color: white
+    position: relative
+    z-index: 100
 
 .over-heading
     font-family: Gilroy, sans-serif
@@ -123,3 +132,25 @@ a
         margin: 0 auto
         margin-top: 25vh
         max-width: 950px
+
+.article
+    display: flex
+    &__img
+        z-index: 100
+        max-width: 400px
+        flex-grow: 1
+        align-self: center
+    &__paragraph
+        flex-grow: 2
+        align-self: center
+        margin-right: 100px
+    &__number
+        font-family: Gilroy, sans-serif
+        font-weight: bold
+        font-size: 240px
+        line-height: 240px
+        color: #FFFFFF
+        opacity: 0.1
+        position: absolute
+        top: -107px
+        left: -148px
